@@ -1,0 +1,30 @@
+{
+  "name": "VDLocalization",
+  "version": "0.1.0",
+  "summary": "A short description of VDLocalization.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/doanvanvu9992@gmail.com/VDLocalization",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "doanvanvu9992@gmail.com": "vu.doan@tiki.vn"
+  },
+  "source": {
+    "git": "https://github.com/doanvanvu9992@gmail.com/VDLocalization.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "VDLocalization/Classes/**/*",
+  "dependencies": {
+    "Alamofire": [
+
+    ],
+    "SwiftyJSON": [
+
+    ]
+  }
+}

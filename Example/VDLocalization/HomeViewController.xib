@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="TKLocalization" customModuleProvider="target">
+            <connections>
+                <outlet property="changeLanguage" destination="qva-AV-edk" id="yTB-Yh-6mV"/>
+                <outlet property="headerLabel" destination="x6u-Ij-E7N" id="5LO-gS-0aK"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eu7-Al-T62">
+                    <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Demo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x6u-Ij-E7N">
+                            <rect key="frame" x="161" y="10.333333333333334" width="53" height="23.333333333333329"/>
+                            <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localize" value="account_my_order_titile"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.1058823529" green="0.6588235294" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="x6u-Ij-E7N" firstAttribute="centerX" secondItem="eu7-Al-T62" secondAttribute="centerX" id="0pM-WR-LuS"/>
+                        <constraint firstItem="x6u-Ij-E7N" firstAttribute="centerY" secondItem="eu7-Al-T62" secondAttribute="centerY" id="7VL-MY-RIy"/>
+                        <constraint firstAttribute="height" constant="44" id="GNm-vW-2ki"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YaL-oV-Ib1">
+                    <rect key="frame" x="0.0" y="88" width="375" height="690"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qva-AV-edk">
+                            <rect key="frame" x="144.66666666666666" y="316" width="86" height="58"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <inset key="contentEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
+                            <state key="normal" title="Button"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localize" value="account_order_agree_button"/>
+                            </userDefinedRuntimeAttributes>
+                            <variation key="heightClass=regular-widthClass=regular">
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                            </variation>
+                            <connections>
+                                <action selector="changeAction:" destination="-1" eventType="touchUpInside" id="gW5-dO-rMC"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="qva-AV-edk" firstAttribute="centerX" secondItem="YaL-oV-Ib1" secondAttribute="centerX" id="Auy-dO-BTp"/>
+                        <constraint firstItem="qva-AV-edk" firstAttribute="centerY" secondItem="YaL-oV-Ib1" secondAttribute="centerY" id="Um4-wm-Z4u"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.1058823529" green="0.6588235294" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="YaL-oV-Ib1" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="3iJ-1k-Epb"/>
+                <constraint firstAttribute="trailing" secondItem="eu7-Al-T62" secondAttribute="trailing" id="Ahl-nG-CRP"/>
+                <constraint firstItem="eu7-Al-T62" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="FtU-w9-pgD"/>
+                <constraint firstItem="eu7-Al-T62" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="cL0-2T-NiH"/>
+                <constraint firstItem="YaL-oV-Ib1" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="cwm-4G-o8g"/>
+                <constraint firstItem="YaL-oV-Ib1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ouL-s7-hnT"/>
+                <constraint firstItem="YaL-oV-Ib1" firstAttribute="top" secondItem="eu7-Al-T62" secondAttribute="bottom" id="uoh-xH-gyy"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="130.40000000000001" y="152.47376311844079"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,6 @@
+framework module VDLocalization {
+  umbrella header "VDLocalization-umbrella.h"
+
+  export *
+  module * { export * }
+}
